@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Whats</title>
+    
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        h1 {
+            font-size: 42px;
+        }
+        a {
+            color: #555555;
+            text-decoration: none;
+        }
+        p {
+            line-height: 1.5;
+            font-size: 18px;
+        }
+        .big {
+            font-size: 22px;
+        }
+        .center {
+            text-align: center;
+        }
+        .mt-3 {
+            margin-top: 2rem;
+        }
+        .fs-18px {
+            font-size: 18px;
+        }
+        .hl {
+            color: rgb(141, 41, 196);
+        }
+        .banner {
+            font-size: 2vw;
+            background-color: rgb(255, 0, 0);
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        .disclaimer {
+            color: #999999;
+        }
+        .crossed {
+            text-decoration: line-through;
+            color: rgb(255, 0, 0);
+        }
+        .btn {
+            background-color: #FFAE00;
+            border-radius: 4px;
+            display: block;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 3vw;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 24px 28px;
+            text-decoration: none;
+            box-shadow: 1px 2px 8px #999999;
+        }
+        .new-price {
+            color: rgb(0, 184, 0);
+            text-shadow: 0 2px 4px rgba(0, 222, 0, 0.5);
+            font-size: 32px;
+        }
+        @media (min-width: 600px) {
+            .py-lg-1 {
+                padding-bottom: 0.75rem;
+                padding-top: 0.75rem;
+            }
+            .px-lg-20 {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            .btn {
+                max-width: 450px;
+                font-size: 1.25vw;
+            }
+        }
+        @media (max-width: 600px) {
+            .banner {
+                font-size: 3.75vw;
+            }
+            .py-sm-1 {
+                padding-bottom: 0.75rem;
+                padding-top: 0.75rem;
+            }
+            .px-sm-2 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .btn {
+                max-width: 75%;
+            }
+            .alt {
+                font-size: 4vw;
+            }
+            h1 {
+                font-size: 5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="banner py-lg-1 py-sm-1 center white">
+    <h3>ATENÇÃO!</h3>
+</div>
+<section class="px-lg-20 px-sm-2 center">
+    <br><br>
+    
+    
+    <img  width="50%" height="50%" src="assets/img/pres.webp"/>
+    
+    
+    
+    <p class="mt-3"><strong>Entendemos situação e para te ajudar a fazer parte da  
+        <span style="color: red">Sociedade LOTO Secreta</span> vamos te dar um presente!</strong></p>
+
+
+    <br><br>
+    
+    
+    <img width="25%" height="25%" src="assets/img/whats.webp"/>
+    <br><br>
+
+
+    <p>É so entrar em contato com alguem da nossa equipe e falar que se interessou pelo sociedade e tem algumas dúvidas <strong>Então fala que você foi presenteado</strong>.</p>
+    
+
+
+
+
+    <a class="btn alt mt-3" href="https://api.whatsapp.com/send?phone=5514996110541&text=Olá%20!%20Me%20interessei%20pela%20sociedade%20mas%20ainda%20tenho%20dúvidas">
+        FALAR COM SUPORTE!
+    </a>
+    <br/>
+
+    
+
+
+
+   
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    (function ($) {
+        $('a').each(function () {
+            let href = $(this).attr("href");
+            if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
+            // if (href.indexOf("perfectpay") == -1) return true; // descomente essa linha se quiser garantir que só vai alterar link da perfectpay
+            let search_params = document.location.search.replace('?', '');
+            let urlFinal = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+            $(this).attr("href", urlFinal);
+        });
+    })(jQuery);
+</script>
+</body>
+</html>
