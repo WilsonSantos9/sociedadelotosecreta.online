@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>White page</title>
+    
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        h1 {
+            font-size: 42px;
+        }
+        a {
+            color: #555555;
+            text-decoration: none;
+        }
+        p {
+            line-height: 1.5;
+            font-size: 18px;
+        }
+        .big {
+            font-size: 22px;
+        }
+        .center {
+            text-align: center;
+        }
+        .mt-3 {
+            margin-top: 2rem;
+        }
+        .fs-18px {
+            font-size: 18px;
+        }
+        .hl {
+            color: rgb(141, 41, 196);
+        }
+        .banner {
+            font-size: 2vw;
+            background-color: rgb(255, 0, 0);
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        .disclaimer {
+            color: #999999;
+        }
+        .crossed {
+            text-decoration: line-through;
+            color: rgb(255, 0, 0);
+        }
+        .btn {
+            background-color: #FFAE00;
+            border-radius: 4px;
+            display: block;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 3vw;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 24px 28px;
+            text-decoration: none;
+            box-shadow: 1px 2px 8px #999999;
+        }
+        .new-price {
+            color: rgb(0, 184, 0);
+            text-shadow: 0 2px 4px rgba(0, 222, 0, 0.5);
+            font-size: 32px;
+        }
+        @media (min-width: 600px) {
+            .py-lg-1 {
+                padding-bottom: 0.75rem;
+                padding-top: 0.75rem;
+            }
+            .px-lg-20 {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            .btn {
+                max-width: 450px;
+                font-size: 1.25vw;
+            }
+        }
+        @media (max-width: 600px) {
+            .banner {
+                font-size: 3.75vw;
+            }
+            .py-sm-1 {
+                padding-bottom: 0.75rem;
+                padding-top: 0.75rem;
+            }
+            .px-sm-2 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .btn {
+                max-width: 75%;
+            }
+            .alt {
+                font-size: 4vw;
+            }
+            h1 {
+                font-size: 5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="banner py-lg-1 py-sm-1 center white">
+    <h3>ATENÇÃO!</h3>
+</div>
+<section class="px-lg-20 px-sm-2 center">
+    <br><br>
+    
+    
+    <img  width="75%" height="75%" src="assets/img/lotofacil-logo-_1_.webp"/>
+    
+    <br><br>
+        <h2><strong>O que é?</strong></h2>
+ 
+
+
+    <p>A Lotofácil é uma modalidade de loteria praticada no Brasil sob o controle da Caixa Econômica Federal (CEF). Seu primeiro concurso foi realizado em 29 de setembro de 2003, após lentidão no processo de aprovação no Congresso Nacional.</p>
+
+    <p>Pouco tempo após seu lançamento, era a segunda loteria que mais arrecadava para a CEF, atrás apenas da Mega-Sena. Nesta modalidade, o jogador deve marcar entre quinze e vinte números no volante, dentre os 25 disponíveis, e ganha um prêmio em caso acerte entre onze e quinze números.</p>
+    
+    <p>Os concursos de final zero e o concurso especial de setembro, conhecido como Lotofácil da Independência, têm um prêmio composto da acumulação . Os jogos são realizados diariamente, exceto aos domingos, desde agosto de 2020, e são transmitidos ao vivo.</p>
+
+    <p>Parte dos valores arrecadados são repassados para programas sociais do governo.</p>
+    
+    <br/>
+<br><br>
+    <img  width="75%" height="75%" src="assets/img/LOTOFACIL-21.webp"/>
+    <br><br>
+        <h2><strong>Formato</strong></h2>
+
+
+    <p>A Lotofácil é uma das loterias da Caixa Econômica Federal (CEF). Nesta modalidade, o jogador deve marcar entre quinze e vinte números no volante, dentre os 25 disponíveis.</p>
+
+    <p>Se o jogador acertar entre onze e quinze números, ele ganhará um prêmio, sendo que, quanto mais números acertados, maior será o valor.</p>
+
+    <p>O usuário também pode optar pela "Surpresinha", onde o sistema escolhe os números, ou usar o "Teimosinha", que permite concorrer com a mesma aposta por três, seis, doze, dezoito ou 24 concursos consecutivos.</p>
+
+    <p>Por fim, há a opção do Bolão Caixa, que permite ao jogador realizar seus jogos em grupo.</p>
+
+
+   
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    (function ($) {
+        $('a').each(function () {
+            let href = $(this).attr("href");
+            if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
+            // if (href.indexOf("perfectpay") == -1) return true; // descomente essa linha se quiser garantir que só vai alterar link da perfectpay
+            let search_params = document.location.search.replace('?', '');
+            let urlFinal = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+            $(this).attr("href", urlFinal);
+        });
+    })(jQuery);
+</script>
+</body>
+</html>
